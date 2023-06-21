@@ -1,0 +1,137 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: #218380;
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#timer {
+  margin-right: 65px;
+  color: white;
+}
+
+#leaderboard {
+  margin-left: 20px;
+  color: white;
+}
+
+.cardholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60vw;
+  height: 300px;
+  background-color: #ffffff;
+  border: 1px solid rgb(128, 128, 128, 0.5);
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.306);
+  padding: 30px 30px;
+  box-sizing: border-box;
+}
+
+#finalScore {
+  display: none;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 40px 40px;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#highScore {
+  display: none;
+  width: 350px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#scoreDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
+  align-items: center;
+  width: auto;
+}
+
+#question {
+  display: none;
+  width: 65vw;
+  height: 350px;
+  padding: 20px 20px;
+  padding-left: 30px;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #21838095;
+}
+.btn {
+  background-color: #218380;
+  width: 50vw;
+  height: 28px;
+  border-radius: 6px;
+  border-color: rgba(0, 0, 0, 0.274);
+  color: #ffffff;
+  text-align: left;
+  padding-left: 10px;
+  margin: 5px 5px;
+}
+
+.startButton {
+  background-color: #218380;
+  width: 80px;
+  height: 28px;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0.274);
+  color: #ffffff;
+}
+
+#closeScore {
+  width: 30px;
+  height: 30px;
+  align-self: end;
+  background-color: white;
+  border-radius: 20px;
+  color: darkgray;
+}
+hr,
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 55vw;
+  flex-shrink: 4;
+  flex-basis: 0%;
+  display: flex;
+}
+
+.scoreNav {
+  width: auto;
+}
+
+#initials {
+  width: 90px;
+  height: 25px;
+}

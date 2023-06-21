@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" class="rel">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <a id=leaderboard onclick=viewScore()>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+            </i></a>
+        <a id="timer" class="">Time:&nbsp; <span id="time"></span></a>
+    </header>
+    <main>
+        <div class="cardholder" id="cardholder">
+            <div class="card" id="info">
+                <h2>Coding Quiz Challenge</h2>
+                <p class="description">Try to answer to following code-related questions within the limit time. <br>
+                    Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <button class="startButton" onclick=startHandler()>Start Quiz</button>
+            </div>
+            <div class="card question" id="question">
+                <h2>Commonly used data types DO NOT include:</h2>
+                <button class="btn" onclick=answerHandler(0)>1. strings</button>
+                <button class="btn" onclick=answerHandler(1)>2. booleans</button>
+                <button class="btn" onclick=answerHandler(2)>3. alerts</button>
+                <button class="btn" onclick=answerHandler(3)>4. numbers</button>
+                <hr class="ruler">
+                <p></p>
+            </div>
+            <div class="card" id="finalScore">
+                <h2>All Done!</h2>
+                <p class="description">Your final score is  &nbsp;<span id="scoreValue"></span> </p>
+                <span><label for="initials">Enter Initials:</label>
+                <input type="text" id="initials" onchange=setInitials()>   
+                <button class="startButton" onclick=submitScore()>Submit</button></span> 
+            </div>
+            <div class="card" id="highScore">
+                <button id="closeScore" onclick=closeScore()>X</button>
+                <h2 class="scoreNav">Highscores:</h2>  
+                <div id="scoreDiv">
+
+                </div>  
+            </div>
+        </div>
+    </main>
+    <script>
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
